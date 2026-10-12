@@ -1,65 +1,217 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>ONE Privacy Policy</title>
-<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#111} h1,h2{color:#14217F} a{color:#14217F}</style></head>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy – ONE</title>
+<meta name="description" content="How the ONE Android app (Placebo Drinks Ltd, UK) collects, uses, stores and deletes your data, including location blurring and account deletion.">
+<link rel="canonical" href="https://laurynas45.github.io/one-legal/privacy.html">
+<link rel="alternate" hreflang="en" href="https://one-app.placebodrinks.workers.dev/privacy/">
+<link rel="alternate" hreflang="es" href="https://one-app.placebodrinks.workers.dev/es/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://one-app.placebodrinks.workers.dev/privacy/">
+<meta name="theme-color" content="#15122E">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="https://one-app.placebodrinks.workers.dev/img/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="https://one-app.placebodrinks.workers.dev/img/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ONE">
+<meta property="og:title" content="Privacy Policy – ONE">
+<meta property="og:description" content="How the ONE Android app (Placebo Drinks Ltd, UK) collects, uses, stores and deletes your data, including location blurring and account deletion.">
+<meta property="og:url" content="https://one-app.placebodrinks.workers.dev/privacy/">
+<meta property="og:image" content="https://one-app.placebodrinks.workers.dev/img/og.jpg">
+<meta property="og:locale" content="en_GB">
+<style>@font-face{font-family:M;src:url(/fonts/montserrat-500.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:M;src:url(/fonts/montserrat-700.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:M;src:url(/fonts/montserrat-900.woff2) format("woff2");font-weight:900;font-display:swap}
+:root{--ink:#15122E;--ink2:#1F1B45;--ink3:#2C2850;--yel:#FFD21F;--pink:#FF3D7F;--teal:#00B3A4;--purple:#6C4CF1;--mut:#C9C5E8}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:M,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-weight:500;background:var(--ink);color:#fff;line-height:1.55;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.y{color:var(--yel)}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:8px;background:var(--yel);color:var(--ink);padding:8px 14px;border-radius:8px;font-weight:700;z-index:9}
+.skip:focus{left:8px}
+header{position:sticky;top:0;z-index:5;background:rgba(21,18,46,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.08em;font-size:22px;text-decoration:none}
+.brand img{width:34px;height:34px;border-radius:9px}
+.links{display:none;gap:22px;font-weight:700;font-size:15px}
+.links a{text-decoration:none;opacity:.85}.links a:hover{opacity:1;color:var(--yel)}
+.right{display:flex;align-items:center;gap:10px}
+.lang{display:inline-flex;border:2px solid var(--ink3);border-radius:999px;overflow:hidden;font-weight:700;font-size:13px}
+.lang a,.lang span{padding:6px 11px;text-decoration:none}
+.lang span{background:var(--yel);color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--yel);color:var(--ink);font-weight:900;text-decoration:none;border-radius:999px;padding:10px 18px;font-size:14px;white-space:nowrap}
+.btn:hover{filter:brightness(1.05)}
+.hero{position:relative;padding:44px 0 56px;overflow:hidden}
+.blob{position:absolute;border-radius:50%;background:var(--ink3);z-index:-1}
+.hero-grid{display:grid;gap:36px;align-items:center}
+.kicker{display:inline-block;background:var(--pink);font-weight:900;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:7px 14px 6px;border-radius:10px;transform:rotate(-2deg)}
+h1{font-weight:900;font-size:clamp(36px,9vw,64px);line-height:1.05;margin:18px 0 16px;letter-spacing:-.01em}
+.lead{font-size:clamp(17px,2.4vw,20px);color:var(--mut);max-width:38em}
+.play{display:inline-block;margin-top:26px}
+.play img{height:58px;width:auto}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;list-style:none}
+.chips li{background:var(--ink2);border:1px solid var(--ink3);border-radius:999px;padding:7px 14px;font-size:14px;font-weight:700}
+.chips li::before{content:"✓";color:var(--teal);margin-right:7px;font-weight:900}
+.hero-img img,.shot img{border-radius:22px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.hero-img{max-width:420px;margin-inline:auto;transform:rotate(2deg)}
+section{padding:64px 0}
+h2{font-weight:900;font-size:clamp(28px,6vw,42px);line-height:1.12;margin-bottom:10px}
+.sub{color:var(--mut);font-size:18px;margin-bottom:32px}
+.feat{display:grid;gap:16px}
+.card{background:var(--ink2);border:1px solid var(--ink3);border-radius:20px;padding:22px}
+.card h3{font-weight:900;font-size:19px;margin:14px 0 6px}
+.card p{color:var(--mut);font-size:15.5px}
+.ic{width:52px;height:52px;border-radius:15px;display:flex;align-items:center;justify-content:center;color:#fff}
+.ic svg{width:28px;height:28px}
+.ic.pink{background:var(--pink)}.ic.teal{background:var(--teal)}.ic.yellow{background:var(--yel);color:var(--ink)}.ic.purple{background:var(--purple)}
+.light{background:#F6F4FF;color:var(--ink)}
+.light .card{background:#fff;border-color:#E6E2F7;box-shadow:0 6px 24px rgba(21,18,46,.06)}
+.light .sub,.light .card p{color:#4A4670}
+.steps{display:grid;gap:16px;list-style:none;counter-reset:s}
+.steps li{background:#fff;border-radius:20px;padding:22px 22px 22px 76px;position:relative;box-shadow:0 6px 24px rgba(21,18,46,.08)}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:22px;top:22px;width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--yel);font-weight:900;display:flex;align-items:center;justify-content:center}
+.steps b{display:block;font-weight:900;font-size:18px}
+.steps span{color:#4A4670}
+.gallery{display:grid;grid-auto-flow:column;grid-auto-columns:78%;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}
+.gallery figure{scroll-snap-align:start}
+.gallery img{border-radius:18px}
+.priv{display:grid;gap:32px;align-items:center}
+.ticks{list-style:none;display:grid;gap:10px;margin-top:22px}
+.ticks li{background:var(--ink2);border:1px solid var(--ink3);border-radius:14px;padding:12px 16px;font-weight:700;display:flex;gap:10px;align-items:center}
+.ticks li::before{content:"✓";flex:0 0 24px;height:24px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900}
+.shot{max-width:380px;margin-inline:auto}
+.teaser{background:var(--teal);color:#fff;border-radius:22px;padding:26px;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between}
+.teaser h2{font-size:26px;margin:0}
+.teaser a{background:#fff;color:var(--ink);font-weight:900;text-decoration:none;border-radius:999px;padding:12px 20px}
+.faq details{background:#fff;border-radius:16px;margin-bottom:12px;box-shadow:0 4px 16px rgba(21,18,46,.06)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 52px 18px 20px;font-weight:900;font-size:17px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:50%;background:var(--yel);display:flex;align-items:center;justify-content:center;font-size:18px}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 20px 18px;color:#4A4670}
+.cta{text-align:center;background:var(--yel);color:var(--ink)}
+.cta h2{margin-bottom:6px}.cta p{font-weight:700}
+.cta .play img{margin-inline:auto}
+footer{padding:36px 0 48px;color:var(--mut);font-size:14px}
+footer .row{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between}
+footer a{color:#fff}
+.legal{background:#F6F4FF;color:var(--ink);padding:48px 0 64px}
+.legal .doc{max-width:820px}
+.legal h1{font-size:clamp(32px,7vw,48px);margin:8px 0 6px}
+.legal .meta{color:#4A4670;font-weight:700;margin-bottom:18px}
+.legal .intro{font-size:18px;margin-bottom:18px}
+.legal .other{margin-bottom:22px;font-weight:700}
+.legal a{color:#5B3FE0}
+.legal nav.toc{background:#fff;border:1px solid #E6E2F7;border-radius:16px;padding:16px 20px;margin:0 0 28px}
+.legal nav.toc b{display:block;margin-bottom:6px}
+.legal nav.toc ol{margin-left:20px;columns:2 220px;font-size:15px}
+.legal section{padding:0;margin:0 0 30px;scroll-margin-top:80px}
+.legal h2{font-size:clamp(22px,4.5vw,28px);margin-bottom:10px}
+.legal h3{font-size:18px;margin:18px 0 8px}
+.legal p,.legal li{font-size:16.5px;color:#2C2850}
+.legal p{margin-bottom:10px}
+.legal ul,.legal ol{margin:0 0 12px 22px;display:grid;gap:7px}
+.legal code{background:#ECE8FF;border-radius:6px;padding:1px 6px;font-size:.92em}
+.legal .tbl{overflow-x:auto;margin:6px 0 14px;-webkit-overflow-scrolling:touch}
+.legal table{border-collapse:collapse;width:100%;min-width:560px;background:#fff;border-radius:12px;overflow:hidden;font-size:15px}
+.legal th,.legal td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid #E6E2F7}
+.legal th{background:var(--ink);color:#fff;font-weight:700}
+.legal td:first-child{font-weight:700;white-space:nowrap}
+.flinks a{font-weight:700}
+@media(max-width:639px){.legal table{min-width:0}.legal thead{display:none}.legal tr,.legal td{display:block}.legal tr{border-bottom:2px solid #E6E2F7}.legal td{border:0;padding:4px 14px}.legal td:first-child{padding-top:12px;white-space:normal;color:var(--ink)}.legal td:last-child{padding-bottom:12px;color:#4A4670}}
+@media(min-width:640px){.feat{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(3,1fr)}.steps li{padding:76px 22px 22px}.gallery{grid-auto-columns:42%}}
+@media(min-width:900px){.links{display:flex}.hero{padding:72px 0 88px}.hero-grid{grid-template-columns:1.15fr .85fr}.feat{grid-template-columns:repeat(3,1fr)}.priv{grid-template-columns:1fr .8fr}.gallery{grid-auto-flow:row;grid-template-columns:repeat(3,1fr);overflow:visible}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style>
+</head>
 <body>
-<p><a href="index.html">ONE legal</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
-<h1>Privacy Policy (English, for hosting)</h1>
-
-<p>Last updated: 16 September 2026.</p>
-
-<p>This is the English source for a public HTTPS page. The same content ships in-app (EN/ES/ZH) under Welcome or Me → Privacy Policy. English is official.</p>
-
-<p>**ONE is not yet published on the App Store or Google Play.**</p>
-
-<p>Operator: Placebo Drinks Ltd (confirm the legal entity name in App Store Connect / Play Console before launch). App identifier: `com.placebodrinks.one`.</p>
-
-<h2>Who we are</h2>
-
-<p>This Privacy Policy describes how the ONE mobile app (“ONE”, “we”) handles information. ONE is a GPS-based social, dating, and marketplace product.</p>
-
-<h2>Information we collect</h2>
-
-<p>Depending on how you use ONE we process: account details (username, display name; this MVP stores a password only on-device), date of birth and region for the age gate, contact channel (email or phone) for two-tier verification, approximate or precise location when you grant GPS permission, profile content (bio, skills, hobbies, services, website links, gender icon, visibility), photos you upload for identity checks or the private gallery, social graph (friends, location-sharing choices), user-generated posts, comments, and marketplace listings, optional advertising campaign drafts, language preference, and reports/blocks you submit.</p>
-
-<p>We do not collect contacts from your address book, payment cards, or bank details.</p>
-
-<h2>Location sharing</h2>
-
-<p>ONE uses GPS to place you on a map of nearby verified members. Location is used for app functionality, not for selling location data. You can appear visible or incognito. Incognito hides you from everyone except accepted friends you explicitly share location with. You can revoke system location permission in iOS/Android settings. Background location is not requested.</p>
-
-<h2>Dating and social features</h2>
-
-<p>Profiles, matching, the feed, and friend requests are social features. Other members may see information you choose to make visible. Matching uses interests and complementary services you add to your profile.</p>
-
-<h2>Age verification</h2>
-
-<p>ONE is an 18+ (19+ in the South Korea placeholder) dating, marketplace, and social product. We collect date of birth and region solely to enforce the age gate. Store listings should be rated 17+ (mature) because the app includes dating and user-generated content. Underage users are not permitted.</p>
-
-<h2>Camera and photos</h2>
-
-<p>Camera and photo-library access are used for identity verification and for profile or private-gallery uploads. Nudity is not allowed. Other speech and imagery from verified members is allowed. Photos stay on-device in this MVP. A future KYC vendor would process identity images under its own terms, disclosed before enabling.</p>
-
-<h2>Content policy</h2>
-
-<p>ONE is a free-speech app. Verified members may post anything except nudity on public profiles, the private gallery, and the feed — that is the only hard content ban on those surfaces. We also prohibit illegal content that Apple and Google require us to remove, such as child sexual abuse material and credible threats of violence. Report and Block are member safety tools, not general speech moderation.</p>
-
-<h2>Advertising</h2>
-
-<p>Advertising is the only intended paid feature. Checkout is not live. We do not use your data for third-party advertising tracking in this version, and we do not sell personal information.</p>
-
-<h2>Account deletion and retention</h2>
-
-<p>Delete your account in Me → Delete account. This removes your profile and associated content from this device. When a production backend exists, deletion will also be processed on the server. Signing out does not delete your account.</p>
-
-<h2>Your choices and rights</h2>
-
-<p>You can change visibility, stop sharing location with a friend, revoke OS permissions, switch language (English, Spanish, Chinese), and delete your account. Depending on your region you may have access, correction, and deletion rights. Contact the operator via the in-app support assistant until a public privacy email is published.</p>
-
-<h2>Children</h2>
-
-<p>ONE is not directed at children. We do not knowingly collect data from children.</p>
-
-<h2>Changes</h2>
-
-<p>We may update this policy as ONE adds a real backend, KYC vendor, or payments. Last updated 16 September 2026.</p>
-<p style="margin-top:3rem;color:#666;font-size:.9rem">Placebo Drinks Ltd · Contact via in-app support for privacy requests.</p>
-</body></html>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap nav">
+ <a class="brand" href="https://one-app.placebodrinks.workers.dev/"><img src="https://one-app.placebodrinks.workers.dev/img/icon-192.webp" alt="" width="34" height="34">ONE</a>
+ <div class="right"><div class="lang" role="group" aria-label="Language"><span aria-current="true">EN</span><a href="https://one-app.placebodrinks.workers.dev/es/privacy/" hreflang="es" lang="es">ES</a></div><a class="btn" href="https://play.google.com/store/apps/details?id=com.placebodrinks.one" rel="noopener">Get the app</a></div>
+</div></header>
+<main id="main" class="legal"><div class="wrap doc">
+ <p><a href="https://one-app.placebodrinks.workers.dev/">← ONE home</a></p>
+ <h1>Privacy Policy</h1>
+ <p class="meta">Effective date: 8 October 2026 · Last updated: 12 October 2026</p>
+ <p class="intro">This policy explains what personal data the ONE app collects, why, where it is kept, who it is shared with, and how to delete it. It applies to the ONE Android app (<code>com.placebodrinks.one</code>).</p>
+ <p class="other"><a href="https://one-app.placebodrinks.workers.dev/es/privacy/" hreflang="es" lang="es">Leer en español</a></p>
+ <nav class="toc" aria-label="Contents"><b>Contents</b><ol><li><a href="#who">Who we are</a></li><li><a href="#short">The short version</a></li><li><a href="#collect">What data we collect</a></li><li><a href="#why">How we use your data</a></li><li><a href="#location">Location and how we blur it</a></li><li><a href="#see">Who can see what</a></li><li><a href="#where">Where your data is stored</a></li><li><a href="#share">Who we share data with</a></li><li><a href="#retention">How long we keep data</a></li><li><a href="#delete-account">Deleting your account</a></li><li><a href="#rights">Your rights</a></li><li><a href="#children">Adults only</a></li><li><a href="#security">Security</a></li><li><a href="#changes">Changes to this policy</a></li><li><a href="#contact">Contact</a></li></ol></nav>
+ <section id="who"><h2>1. Who we are</h2><p>ONE is made by <strong>Placebo Drinks Ltd</strong>, a company in the United Kingdom (“we”, “us”). We decide how your data is used in ONE, so we are the data controller under UK data protection law (UK GDPR).</p>
+<p>Contact for anything about privacy: <a href="mailto:laurynasjob38@gmail.com">laurynasjob38@gmail.com</a></p></section><section id="short"><h2>2. The short version</h2><ul>
+<li>We store what ONE needs to work: your sign-in email, your profile, what you post, your messages and your location.</li>
+<li>Other people only see a <strong>blurred location</strong> a few hundred metres from where you really are, never your exact pin, unless you choose to share your exact location with a friend for a short time.</li>
+<li>We don’t sell your data. ONE has no third-party ads, no ad trackers and no analytics or crash-reporting tools.</li>
+<li>Your photos stay on your phone. We don’t upload them.</li>
+<li>You can delete your account at any time in the app (<strong>Me → Delete account</strong>) or by emailing us.</li>
+</ul></section><section id="collect"><h2>3. What data we collect</h2><p>When you use ONE, our server stores the following:</p>
+<div class="tbl"><table>
+<thead><tr><th>Data</th><th>What it is</th><th>Why we need it</th></tr></thead>
+<tbody>
+<tr><td>Email address</td><td>The address you sign in with.</td><td>To send you a one-time sign-in code and to recognise your account. It is not shown on your profile.</td></tr>
+<tr><td>Profile</td><td>Username, display name, bio, up to 5 links, skills, hobbies, services you offer or are looking for, what you’re on ONE for (dating, friends, networking, activities), gender icon, language, region, and whether you are visible or incognito.</td><td>To show your profile to people nearby and match you with people and services that fit.</td></tr>
+<tr><td>Date of birth</td><td>The date you enter at sign-up.</td><td>To check you are old enough to use ONE. Only you see the full date; other members can see your birth year.</td></tr>
+<tr><td>Location</td><td>Your phone’s GPS position, read only while you use the app.</td><td>To show what’s near you and to show you to others at a blurred point. See section 5.</td></tr>
+<tr><td>Things you post</td><td>Posts, comments, likes, marketplace listings (title, description, price, tags, category, availability) and opportunities.</td><td>To publish them to people nearby.</td></tr>
+<tr><td>Messages</td><td>1:1 messages with accepted friends, and when they were read.</td><td>To deliver your conversations.</td></tr>
+<tr><td>Friends and sharing</td><td>Friend requests, accepted friends, and your location-sharing choices for each friend.</td><td>Messaging and exact-location sharing only work between accepted friends.</td></tr>
+<tr><td>Blocks and reports</td><td>Who you block, and reports you send (reason and optional details).</td><td>To keep people safe and deal with abuse.</td></tr>
+<tr><td>Badges</td><td>Yes/no markers such as “email verified”, “age check passed” and whether you have a profile photo.</td><td>To show verification badges and filter the map.</td></tr>
+<tr><td>Technical records</td><td>A sign-in session (we only store a scrambled hash of it), short-lived sign-in records, and counters that limit how often actions can be repeated.</td><td>To keep you signed in and to stop spam and abuse.</td></tr>
+</tbody></table></div>
+<p>Like any internet service, our hosting provider Cloudflare receives your device’s IP address when the app connects. Our code does not save it in our database.</p>
+<h3>What we don’t collect</h3>
+<ul>
+<li><strong>Photos are not uploaded.</strong> Profile and gallery pictures you pick with the Android photo picker or take with the camera stay on your phone. Our server only stores a yes/no flag saying you have a photo. ONE uses the system photo picker, so it does not ask for access to your whole photo library.</li>
+<li>If you set a password in the app, it stays on your phone and is never sent to us.</li>
+<li>No contacts, call logs, SMS, files, microphone or background location.</li>
+<li>No card or bank details (see Google Play in section 8).</li>
+<li>No advertising ID, no analytics SDK, no ad networks.</li>
+</ul></section><section id="why"><h2>4. How we use your data</h2><ul>
+<li><strong>To run ONE for you</strong>: your account, profile, the map, posts, listings, opportunities and messages. This is necessary to provide the service you asked for.</li>
+<li><strong>To keep ONE safe</strong>: the age check, blocks, reports, rate limits and our content rules. We do this because we have a legitimate interest in a safe service, and because ONE is for adults only.</li>
+<li><strong>To sign you in</strong>: the one-time code we email you. We don’t send marketing emails.</li>
+</ul>
+<p>We don’t use your data for profiling for advertising, and we don’t sell it.</p></section><section id="location"><h2>5. Location and how we blur it</h2><ul>
+<li>Location permission is optional. ONE only reads your location while you are using the app. It never asks for background location. You can turn the permission off at any time in Android settings.</li>
+<li>When you allow location, the app sends your device’s coordinates to our server so it can work out distances. <strong>Other people never receive your exact coordinates.</strong></li>
+<li>Instead, the server gives everyone else a <strong>blurred point</strong>: your position moved roughly 140 to 400 metres in a direction that is fixed for your account. Distances other people see are measured from that blurred point.</li>
+<li>Marketplace listings and opportunities are saved at a blurred point too. Your exact position is not stored with them.</li>
+<li>In the app you choose to show an approximate location or to hide it. If your location is hidden (or you haven’t chosen yet), you don’t appear on the map and you can’t publish listings or opportunities. <strong>Incognito</strong> hides your profile from people nearby.</li>
+<li><strong>Exact location sharing</strong> is off unless you start it. You can share your exact location with one accepted friend for a limited time (about 30 minutes). It ends automatically, and only that friend can see it.</li>
+</ul></section><section id="see"><h2>6. Who can see what</h2><ul>
+<li><strong>People nearby</strong> can see your public profile (username, display name, bio, links, skills, interests, gender icon, birth year and badges), your blurred location, your posts and comments, your listings and your opportunities. You can hide your name on a listing, and opportunities don’t show your name unless you choose to.</li>
+<li><strong>Accepted friends</strong> can message you. They see your exact location only during a share you start.</li>
+<li><strong>People you block</strong> can’t see you and you can’t see them. They can’t message you or send friend requests.</li>
+<li><strong>We</strong> can access the data in our database to run ONE, look into reports and answer your requests.</li>
+</ul></section><section id="where"><h2>7. Where your data is stored</h2><p>ONE’s server runs on <strong>Cloudflare</strong> (Cloudflare Workers). Your account and content are stored in a Cloudflare D1 database, and one-time sign-in codes in Cloudflare Workers KV. Cloudflare is our hosting provider and processes this data for us under its data processing terms. Cloudflare runs a global network, so your data may be processed outside the UK, including in the United States.</p>
+<p>All traffic between the app and our server is encrypted with HTTPS. Sign-in codes and session tokens are stored only as scrambled hashes.</p>
+<p>Some data only ever lives on your phone, in the app’s own storage: photos, your private gallery, ad drafts and boosted-ad records, and your password if you set one.</p></section><section id="share"><h2>8. Who we share data with</h2><p>We don’t sell your data or share it for anyone else’s marketing. We only use these providers:</p>
+<ul>
+<li><strong>Cloudflare</strong>: hosting and storage, as described in section 7.</li>
+<li><strong>Resend</strong>: the email service that sends your one-time sign-in code. Resend receives your email address and the email with the code. Codes come from <code>codes@invisiblewines.com</code> with the subject “Your ONE code”, and expire after 10 minutes.</li>
+<li><strong>Google Play</strong>: boosted ads are optional and paid. If you buy one, Google Play Billing handles the whole payment under Google’s own privacy policy. We never see your card or bank details. Google sends the app a purchase confirmation, which stays on your phone to switch on the boost and is not sent to our server.</li>
+</ul>
+<p>Apart from that, your data is only shown to other ONE members as described in section 6. We may disclose information if the law requires it.</p></section><section id="retention"><h2>9. How long we keep data</h2><ul>
+<li><strong>Your account, profile, location and content</strong>: for as long as your account exists. They are deleted when you delete your account. To have a single post, listing or message removed sooner, email us.</li>
+<li><strong>One-time sign-in codes</strong>: expire after 10 minutes and are deleted when used.</li>
+<li><strong>Sign-in sessions</strong>: expire after 30 days. Signing out removes the session.</li>
+<li><strong>Anti-abuse counters</strong>: small records holding a count and your account ID or email address. They are not removed automatically when you delete your account. Email us and we will remove them.</li>
+<li><strong>Reports</strong>: reports you made and reports about your profile or posts are deleted with your account. Reports other people made about your listings may be kept for safety.</li>
+<li><strong>Database recovery</strong>: Cloudflare keeps an automatic point-in-time recovery history of our database. Deleted data can stay in that history for up to 30 days before it is gone for good.</li>
+</ul></section><section id="delete-account"><h2>10. Deleting your account</h2><p><strong>In the app:</strong> open the <strong>Me</strong> tab, tap <strong>Delete account</strong>, then <strong>Delete my account permanently</strong>.</p>
+<p>This deletes from our server your profile, email address, date of birth, location, posts and the comments and likes on them, your comments and likes, listings, opportunities, messages you sent and received, friends, location shares, blocks, reports you made, sessions and sign-in records. It also clears ONE’s data on that phone. Deleting removes whole conversations, so the people you messaged lose them too.</p>
+<p><strong>By email:</strong> if you can’t use the app (for example you uninstalled it), email <a href="mailto:laurynasjob38@gmail.com">laurynasjob38@gmail.com</a> from the address you sign in with, with the subject “Delete my ONE account”. We may ask you to confirm from that address, and we will delete your account within 30 days.</p>
+<p>Signing out or uninstalling the app does <strong>not</strong> delete your account. Full details: <a href="https://one-app.placebodrinks.workers.dev/delete-account/">Delete your ONE account</a>.</p></section><section id="rights"><h2>11. Your rights</h2><p>Under UK and EU data protection law you can ask to access, correct, delete, restrict or move your data, and object to how we use it. In the app you can edit your profile, switch to incognito, hide your location and delete your account. For anything else, email <a href="mailto:laurynasjob38@gmail.com">laurynasjob38@gmail.com</a>. We will reply within one month.</p>
+<p>If you are unhappy with how we handle your data, you can complain to the UK Information Commissioner’s Office at <a href="https://ico.org.uk/make-a-complaint/" rel="noopener">ico.org.uk</a> or your local data protection authority.</p></section><section id="children"><h2>12. Adults only</h2><p>ONE is for adults only and is not meant for children. The app asks for your date of birth and only lets you in if you are at least 18 (19 in South Korea). ONE is rated Mature 17+ on Google Play because it includes dating and user-generated content. If you think a child is using ONE, tell us at <a href="mailto:laurynasjob38@gmail.com">laurynasjob38@gmail.com</a> and we will delete the account.</p></section><section id="security"><h2>13. Security</h2><p>We use HTTPS for all traffic, store sign-in codes and session tokens only as hashes, limit sign-in attempts and rate-limit actions. No system is perfectly secure, so please don’t share sensitive information in your profile or posts that you wouldn’t want others to see.</p></section><section id="changes"><h2>14. Changes to this policy</h2><p>If we change this policy, we will update this page and the effective date at the top. For important changes we will also tell you in the app.</p></section><section id="contact"><h2>15. Contact</h2><p>Placebo Drinks Ltd (UK), maker of ONE.<br>Email: <a href="mailto:laurynasjob38@gmail.com">laurynasjob38@gmail.com</a></p></section>
+</div></main>
+<footer><div class="wrap row">
+ <p>© 2026 Placebo Drinks Ltd. ONE is made by Placebo Drinks Ltd (UK). Contact: <a href="mailto:laurynasjob38@gmail.com">laurynasjob38@gmail.com</a></p>
+ <p class="flinks"><a href="https://one-app.placebodrinks.workers.dev/privacy/">Privacy policy</a> · <a href="https://one-app.placebodrinks.workers.dev/delete-account/">Delete account</a></p>
+ <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
+</div></footer>
+</body>
+</html>
